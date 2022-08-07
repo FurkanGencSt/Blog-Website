@@ -1,0 +1,17 @@
+<%- include('partial/header'); -%>
+
+<h1>COMPOSE</h1>
+<form  action="/compose" method="post">
+  <div class="form-group">
+    <label for="exampleInputTitleArea">Title</label>
+    <input name="titleArea" type="text" class="form-control" id="exampleInputTitleArea" aria-describedby="titleArea" placeholder="Enter Title">
+    <small id="titleArea" class="form-text text-muted">Title Area</small><br><br><br>
+    <label for="exampleInputTextArea">Text Area</label>
+    <textarea name="textArea" rows="8" cols="80" type="text" class="form-control" id="exampleInputTextArea" aria-describedby="textArea" placeholder="Text Area"></textarea>
+    <small id="textArea" class="form-text text-muted">Please Enter Your Text</small>
+  </div>
+
+  <button class="btn btn-primary" type="submit" name="submit">PUBLİSH</button>
+
+</form>
+<%- include('partial/footer'); -%>
